@@ -8,6 +8,7 @@
     <p>
       <%= link_to "Show this product", product %>
     </p>
+    <%= button_to "Buy now!", checkout_create_path, params: {id: product.id}, remote: true %>
   <% end %>
 </div>
 
